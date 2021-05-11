@@ -1,3 +1,10 @@
+# Dependencias
+ - rsa
+ - clx.xms.client
+ - dotenv
+ - flask
+ - twilio
+  
 # .env
 Crear un archivo .env que contenga las variables mostradas en .env.example utilizando los valores proporcionados por @AndresBeriss
 
