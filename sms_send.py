@@ -8,6 +8,8 @@ load_dotenv()
 
 message = "Hello Bob!"
 
+print("\nPlaintext:           ", message)
+
 public_key = {}
 with open("bob_pub.pem") as f:
     for line in f:
@@ -17,8 +19,7 @@ with open("bob_pub.pem") as f:
 
 ciphertext = encrypt(message, public_key)
 
-print("Plaintext:           ", message)
-print("Cyphertext:          ", ciphertext)
+print("Cyphertext:          ", ciphertext, "\n")
 
 service_plan_id = os.environ["SERVICE_PLAN_ID"]
 token = os.environ["TOKEN"]

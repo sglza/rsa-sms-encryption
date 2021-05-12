@@ -67,9 +67,8 @@ def encrypt(message, public_key):
     e = public_key["e"]
 
     messages_numbers = [ord(c) for c in message]
-    print("Plaintext: " + message)
 
-    print("Plaintext in ASCII: " + " ".join(str(n) for n in messages_numbers))
+    print("Plaintext in ASCII:   " + " ".join(str(n) for n in messages_numbers))
 
     ciphertext = []
 
