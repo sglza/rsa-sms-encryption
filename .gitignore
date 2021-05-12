@@ -3,3 +3,4 @@ ngrok.exe
 /.vscode
 /__pycache__
 send_old.py
+*.pem
