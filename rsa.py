@@ -95,7 +95,7 @@ def decrypt(ciphertext, private_key):
         plainletter = pow(cipherletter, d, n)
         plaintext.append(plainletter)
 
-    print("Plaintext in ASCII: " + " ".join(str(n) for n in plaintext))
+    print("Decrypted message in ASCII:\n" + " ".join(str(n) for n in plaintext))
 
     plaintext = "".join(chr(n) for n in plaintext)
 

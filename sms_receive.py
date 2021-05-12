@@ -21,14 +21,15 @@ f.close()
 def sms_decrypt():
     # Get the message the user sent our Twilio number
     body = request.values.get("Body", None)
+
+    print("\nMessage received:")
+    print(body, end="\n\n")
+
     # RSA decryption
     message = decrypt(body, bob_priv)
 
     # Start our TwiML response
     resp = MessagingResponse()
-
-    print("\nMessage received:")
-    print(body)
 
     print("\nDecrypted message:")
     print(message, end="\n\n")
